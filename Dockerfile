@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer="John Burt"
+LABEL maintainer="alphabet5"
 
 RUN \
  echo "**** install packages ****" && \
