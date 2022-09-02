@@ -12,7 +12,7 @@ fi
 # default behaviour is to launch dnsmasq
 if [[ -z ${1} ]]; then
   echo "Starting dnsmasq..."
-  exec $(which dnsmasq) --log-facility=- --keep-in-foreground --no-resolv --no-hosts --strict-order ${EXTRA_ARGS}
+  exec $(which dnsmasq) --listen-address=0.0.0.0 --log-facility=- --keep-in-foreground --no-resolv --no-hosts --strict-order ${EXTRA_ARGS}
 else
   exec "$@"
 fi

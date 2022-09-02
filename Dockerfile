@@ -5,9 +5,6 @@ RUN \
  echo "**** install packages ****" && \
  apk add --no-cache dnsmasq bash
 
-RUN rm /etc/dnsmasq.conf && \
-    touch /etc/dnsmasq.conf
-
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh
 
