@@ -7,7 +7,6 @@ RUN \
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 755 /entrypoint.sh
-COPY dnsmasq.conf /etc/dnsmasq.conf
 
 EXPOSE 53/tcp 53/udp
 
