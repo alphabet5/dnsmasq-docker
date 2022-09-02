@@ -6,8 +6,8 @@ workflows:
     jobs:
       - docker/publish:
           image: alphabet5/dnsmasq
-#          update-description: true
-#          tag: latest
+          tag: latest
+          #          update-description: true
   weekly:
     triggers: #use the triggers key to indicate a scheduled build
       - schedule:
